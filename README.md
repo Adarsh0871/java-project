@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 java-war-deploy-example
 =======================
 An example Java application that deploys an already-existing WAR file.
@@ -25,3 +26,7 @@ As always, feel free to reach out to [Datica's support team](https://datica.com/
 =======
 # abcd
 >>>>>>> 2ed4050388216f117a4f10dff1f46610759fbae6
+=======
+# Mavan_java
+java_project
+>>>>>>> 126063a8e91eb43d42c2d716bf0fdbaa764eacf6
