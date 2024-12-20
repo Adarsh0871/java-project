@@ -7,6 +7,7 @@
   <artifactId>ArchiveFinder</artifactId>
   <version>1.3</version>
   <name>ArchiveFinder</name>
+   <packaging>war</packaging> 
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
