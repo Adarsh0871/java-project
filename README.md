@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 java-war-deploy-example
 =======================
 An example Java application that deploys an already-existing WAR file.
@@ -21,3 +22,6 @@ Getting Started
 7. Grab some coffee while your build finishes and your new application is deployed for you automatically.
 
 As always, feel free to reach out to [Datica's support team](https://datica.com/support/) if you run into any trouble.
+=======
+# abcd
+>>>>>>> 2ed4050388216f117a4f10dff1f46610759fbae6
