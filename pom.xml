@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -7,7 +6,6 @@
   <groupId>org.bn</groupId>
   <artifactId>ArchiveFinder</artifactId>
   <version>1.3</version>
-
   <name>ArchiveFinder</name>
 
   <properties>
@@ -31,15 +29,6 @@
         <artifactId>commons-io</artifactId>
         <version>2.16.1</version>
       </dependency>
-
-
-      <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>5.11.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -60,8 +49,8 @@
       <artifactId>commons-compress</artifactId>
       <version>1.26.2</version>
     </dependency>
-
   </dependencies>
+
   <build>
     <plugins>
       <!-- Maven Shade Plugin -->
@@ -98,67 +87,4 @@
       </plugin>
     </plugins>
   </build>
-=======
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
-
-    <!-- Group and Artifact Info -->
-    <groupId>com.datica</groupId>
-    <artifactId>java-war-deploy-example</artifactId>
-    <packaging>war</packaging>
-    <version>0.1-SNAPSHOT</version>
-    <name>Demo for deploying WAR files</name>
-
-    <!-- Project Properties -->
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <build>
-        <finalName>java-war-deploy-example</finalName>
-
-        <plugins>
-            <!-- Maven Resources Plugin to Copy web.xml to the correct location -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/resources</directory>
-                                    <includes>
-                                        <include>web.xml</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                            <outputDirectory>src/main/webapp/WEB-INF</outputDirectory> <!-- Define the output location -->
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Maven WAR Plugin to Package the WAR File -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version>
-                <configuration>
-                    <!-- WebXML location is assumed to be default in WEB-INF -->
-                    <webxml>src/main/webapp/WEB-INF/web.xml</webxml> <!-- Reference the web.xml file -->
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
->>>>>>> 6cc311378e6e2895eb3b8238c85a0cf8117ea591
-
 </project>
