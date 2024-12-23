@@ -210,10 +210,10 @@
   </dependencyManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/Adarsh0871/Maven_demo.git</connection>
-    <developerConnection>scm:git:https://github.com/Adarsh0871/Maven_demo.git</developerConnection>
+    <connection>scm:git:https://github.com/Adarsh0871/java-project.git</connection>
+    <developerConnection>scm:https://github.com/Adarsh0871/java-project.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/Adarsh0871/Maven_demo.git</url>
+    <url>https://github.com/Adarsh0871/java-project.git</url>
   </scm>
 
   <prerequisites>
