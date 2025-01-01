@@ -1,0 +1,6 @@
+- name: Deploy API Services on Tomcat with Podman
+  hosts: servers
+  tasks:
+    - name: Include deploy_api role
+      include_role:
+        name: deploy_api

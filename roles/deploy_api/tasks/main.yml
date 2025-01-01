@@ -1,0 +1,30 @@
+- name: Deploy API services in Podman containers
+  vars:
+    apis:
+      - name: api1
+        war_file: api1.war
+        port: 8081
+      - name: api2
+        war_file: api2.war
+        port: 8082
+      - name: api3
+        war_file: api3.war
+        port: 8083
+  block:
+    - name: Build Podman image for each API
+      command: >
+        podman build
+        -t {{ item.name }}_image
+        --file {{ playbook_dir }}/roles/deploy_api/templates/Dockerfile.j2
+        --build-arg war_file={{ playbook_dir }}/roles/deploy_api/files/{{ item.war_file }}
+      loop: "{{ apis }}"
+
+    - name: Run Podman container for each API
+      command: >
+        podman run
+        --name {{ item.name }}
+        -d
+        -p {{ item.port }}:8080
+        --network api_network
+        {{ item.name }}_image
+      loop: "{{ apis }}"
